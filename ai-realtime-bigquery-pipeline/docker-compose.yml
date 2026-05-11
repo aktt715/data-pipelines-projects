@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  consumer:
+    build: .
+    command: python consumer/consumer.py
+
+  producer:
+    build: .
+    command: python producer/producer.py
